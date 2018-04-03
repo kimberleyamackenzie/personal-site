@@ -1,0 +1,35 @@
+html {
+    background-color: #fae26c;
+}
+#header {
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+    position: absolute; 
+    top: 30%;
+    z-index: 1;
+    background-color: transparent;
+    font-family: 'Barlow';
+}
+
+#name {
+    font-weight: bold;
+    font-size: 6rem;
+    color: #ff4e50;
+}
+
+#subname {
+    font-weight: 400;
+    font-size: 4rem;
+    color: 	#fc913a;
+}
+
+#desc {
+    font-weight: light;
+    font-size: 2rem;
+    color: 	#fc913a;
+}
+
+#desc a:hover, #desc a:visited {
+    color: #ff4e50;
+}

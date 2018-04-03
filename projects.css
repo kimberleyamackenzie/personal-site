@@ -37,10 +37,22 @@
     cursor: pointer;
 }
 
+.project-all {
+    width: 100%;
+}
+
 .project-info {
     width: 40%;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
 
+}
+
+.project-images {
+    width: 60%;
+}
+
+.project-images.img{
+    width: 300px;
 }
