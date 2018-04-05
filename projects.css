@@ -20,9 +20,13 @@ html {
     color: 	#fc913a;
 }
 
-.resume a {
+.resume a, .resume a:visited, p a, p a:visited {
     color: #ff4e50;
     text-decoration: none;
+}
+
+.resume a:hover, p a:hover {
+    color: #ff8384;
 }
 
 #project-images {
@@ -38,7 +42,7 @@ html {
     align-items: center;
 }
 
-#audiomorph-modal, #keyboard-modal, #muncher-modal, #sourceress-modal, #static-modal, #trek-modal {
+#audiomorph-modal, #keyboard-modal, #muncher-modal, #sourceress-modal, #static-modal, #trek-modal, #capstone-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -50,7 +54,7 @@ html {
     background-color: rgba(0,0,0,0.4);
 }
 
-#audiomorph, #sourceress, #trek, #static, #muncher, #keyboard {
+#audiomorph, #sourceress, #trek, #static, #muncher, #keyboard, #capstone {
     width: 100%;
     text-align: center;
     display: flex;
@@ -62,7 +66,7 @@ html {
     margin-top: 10%;
 }
 
-#muncher, #keyboard {
+#muncher, #keyboard, #capstone {
     font-size: 6rem;
 }
 
@@ -77,8 +81,6 @@ html {
 .image-container:hover {
     background: #fc913a;
 }
-
-
 
 #project-details {
     background-color: #fae26c;
@@ -128,7 +130,6 @@ html {
 .project-info p {
     margin-top: 0;
 }
-
 
 .project-images {
     margin-left: 100px;

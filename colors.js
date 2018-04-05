@@ -1,14 +1,17 @@
 let r = Math.floor(Math.random() * 256);
-let g = Math.floor(Math.random() * 256);        
+let g = Math.floor(Math.random() * 256);
 let b = Math.floor(Math.random() * 256);
 
 let height = $(document).height();
 let width = $(document).width();
-console.log(height);
 $('body').height(height);
 $('body').width(width);
 
-$('#header').click(function (event){
+document.getElementsByClassName("close")[0].onclick = function () {
+    document.getElementById('header').style.display = "none";
+};
+
+$('#header').click(function (event) {
     event.stopPropagation();
 })
 
@@ -29,6 +32,12 @@ $('body').click(function () {
         })));
         clicked += 1;
 
+        if (clicked == 2) {
+            document.getElementsByClassName('psst')[0].innerText = "Click again, somewhere else.";
+        } else {
+            document.getElementsByClassName('psst')[0].innerText = "Keep clicking.";
+        }
+
         if (clicked == 3) {
             $('body').css({ position: 'absolute' });
         }
@@ -37,8 +46,6 @@ $('body').click(function () {
 
 $(document).on('click', 'div', function (event) {
     event.stopPropagation();
-    console.log(event);
-    console.log('in div click');
     r = Math.floor(Math.random() * 256);
     g = Math.floor(Math.random() * 256);
     b = Math.floor(Math.random() * 256);

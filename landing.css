@@ -31,11 +31,11 @@ html {
     color: 	#fc913a;
 }
 
-#desc a {
+#desc a, #desc a:visited {
     color: #ff4e50;
     text-decoration: none;
 }
 
-#desc a:hover, #desc a:visited {
-    /* color: #ff4e50; */
+#desc a:hover {
+    color: #ff8384;
 }
